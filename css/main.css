@@ -1,0 +1,243 @@
+@font-face {
+	font-family: 'S-CoreDream-3Light';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+}
+
+*{
+	font-family: 'S-CoreDream-3Light';
+}
+
+body{
+	text-align: center;
+	align-content: center;
+	background-color: #262626;
+}
+
+.banner-box
+{
+	/*box-shadow: 0px 0px 10px;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50px;
+	line-height: 100px;
+	width: 100%;
+	border-bottom-color: #494949;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	background-color: #1f1f1f;
+	color:#000000;
+}
+.banner-box-opz
+{
+	height: 150px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #ffffff;
+	color:#000000;
+	opacity: 0%;
+}
+.main-box
+{
+	margin: 50px;
+	display: table;
+	text-align: center;
+	align-content: center;
+	vertical-align: middle;
+	background-color: #262626;
+	color:#000000;
+}
+.login-box
+{
+	box-shadow: 0px 0px 10px;
+	width:500px;
+	width:500px;
+	background-color: #ffffff;
+	border-radius:5px;
+	border: none;
+	color:#000000;
+	padding: 15px 40px 15px 0px;
+	text-align: center;
+	align-content: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px;
+}
+
+.kaif-Button
+{
+	outline: none;
+	width:400px;
+	background-color: #c993dc;
+	background-image: linear-gradient(67deg, #c993dc 0%, #38eff2 100%);
+	border-radius:5px;
+	border: none;
+	color:#ffffff;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	animation: ButtonLeave 200ms;
+}
+@keyframes ButtonHover {
+    0%{background-image: linear-gradient(67deg, #c993dc 0%, #38eff2 100%)}
+	5%{background-image: linear-gradient(76deg, #c993dc 0%, #38eff2 95%, #38eff2 100%)}
+	10%{background-image: linear-gradient(85deg, #c993dc 0%, #38eff2 90%, #38eff2 100%)}
+	15%{background-image: linear-gradient(94deg, #c993dc 0%, #38eff2 85%, #38eff2 100%)}
+	20%{background-image: linear-gradient(103deg, #c993dc 0%, #38eff2 80%, #38eff2 100%)}
+	25%{background-image: linear-gradient(112deg, #c993dc 0%, #38eff2 75%, #38eff2 100%)}
+	30%{background-image: linear-gradient(121deg, #c993dc 0%, #38eff2 70%, #38eff2 100%)}
+	35%{background-image: linear-gradient(130deg, #c993dc 0%, #38eff2 65%, #38eff2 100%)}
+	40%{background-image: linear-gradient(139deg, #c993dc 0%, #38eff2 60%, #38eff2 100%)}
+	45%{background-image: linear-gradient(148deg, #c993dc 0%, #38eff2 55% #38eff2 100%)}
+	50%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 50% #38eff2 100%)}
+	55%{background-image: linear-gradient(166deg, #c993dc 0%, #38eff2 45% #38eff2 100%)}
+	60%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 40% #38eff2 100%)}
+	65%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 35% #38eff2 100%)}
+	70%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 30% #38eff2 100%)}
+	75%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 25% #38eff2 100%)}
+	80%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 20% #38eff2 100%)}
+	85%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 15% #38eff2 100%)}
+	90%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 10% #38eff2 100%)}
+	95%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 5% #38eff2 100%)}
+	100%{background-image: linear-gradient(67deg, #38eff2 0%, #38eff2 100%)}
+}
+@keyframes ButtonLeave {
+    100%{background-image: linear-gradient(67deg, #c993dc 0%, #38eff2 100%)}
+	95%{background-image: linear-gradient(76deg, #c993dc 0%, #38eff2 95%, #38eff2 100%)}
+	90%{background-image: linear-gradient(85deg, #c993dc 0%, #38eff2 90%, #38eff2 100%)}
+	85%{background-image: linear-gradient(94deg, #c993dc 0%, #38eff2 85%, #38eff2 100%)}
+	80%{background-image: linear-gradient(103deg, #c993dc 0%, #38eff2 80%, #38eff2 100%)}
+	75%{background-image: linear-gradient(112deg, #c993dc 0%, #38eff2 75%, #38eff2 100%)}
+	70%{background-image: linear-gradient(121deg, #c993dc 0%, #38eff2 70%, #38eff2 100%)}
+	65%{background-image: linear-gradient(130deg, #c993dc 0%, #38eff2 65%, #38eff2 100%)}
+	60%{background-image: linear-gradient(139deg, #c993dc 0%, #38eff2 60%, #38eff2 100%)}
+	55%{background-image: linear-gradient(148deg, #c993dc 0%, #38eff2 55% #38eff2 100%)}
+	50%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 50% #38eff2 100%)}
+	45%{background-image: linear-gradient(166deg, #c993dc 0%, #38eff2 45% #38eff2 100%)}
+	40%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 40% #38eff2 100%)}
+	35%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 35% #38eff2 100%)}
+	30%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 30% #38eff2 100%)}
+	25%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 25% #38eff2 100%)}
+	20%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 20% #38eff2 100%)}
+	15%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 15% #38eff2 100%)}
+	10%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 10% #38eff2 100%)}
+	5%{background-image: linear-gradient(157deg, #c993dc 0%, #38eff2 5% #38eff2 100%)}
+	0%{background-image: linear-gradient(67deg, #38eff2 0%, #38eff2 100%)}
+}
+
+
+.kaif-Button:hover
+{
+	animation: ButtonHover 200ms;
+	background-image: linear-gradient(67deg, #38eff2 0%, #38eff2 100%);
+}
+
+.login-box input
+{
+	outline: none;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom-width: 1px;
+	width:400px;
+	height:50px;
+	font-size: 20px;
+	text-align: left;
+}
+.login-box input:hover
+{
+	border-color: #c993dc;
+	border-bottom-width: 2px;
+}
+.login-box input:active
+{
+	border-color: #c993dc;
+	border-bottom-width: 2px;
+}
+.login-box input:focus
+{
+	border-color: #c993dc;
+	border-bottom-width: 2px;
+}
+.launch-Button-outdated
+{
+	margin-top: 30px;
+	margin-left: 30px;
+	float: left;
+	outline: none;
+	width: 300px;
+	height: 70px;
+	background-color: #ff5a00;
+	color:#ffffff;
+	border-radius:5px;
+	border: none;
+	padding: 0 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 36px;
+	cursor: pointer;
+}
+.launch-Button-normal
+{
+	margin-top: 30px;
+	margin-left: 30px;
+	float: left;
+	outline: none;
+	width: 300px;
+	height: 70px;
+	background-color: #3643ff;
+	color:#ffffff;
+	border-radius:5px;
+	border: none;
+	padding: 0 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 36px;
+	cursor: pointer;
+}
+.launch-Button-notinstalled
+{
+	margin-top: 30px;
+	margin-left: 30px;
+	float: left;
+	outline: none;
+	width: 300px;
+	height: 70px;
+	background-color: #4e4e4e;
+	color:#ffffff;
+	border-radius:5px;
+	border: none;
+	padding: 0 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 36px;
+	cursor: pointer;
+}
+.Version-info
+{
+	margin-top: 7px;
+	margin-left: 30px;
+	float: left;
+	color:#b8b8b8;
+	font-size: 12px;
+}
+.launch-box
+{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 130px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #1f1f1f;
+	color:#000000;
+	border-top-color: #494949;
+	border-top-style: solid;
+	border-top-width: 1px;
+	text-align: left;
+}
