@@ -1,6 +1,9 @@
 function GameInstall()
 {
-    window.open("https://github.com/JWS7634/Web_Launcher/releases/download/WindowsInstaller/Setup.exe");
+	var download = document.createElement('a');
+	download.href = "https://github.com/JWS7634/Web_Launcher/releases/download/WindowsInstaller/Setup.exe";
+	download.click();
+	//window.open("https://github.com/JWS7634/Web_Launcher/releases/download/WindowsInstaller/Setup.exe");
 }
 function GameUpdate()
 {
