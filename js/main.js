@@ -1,12 +1,10 @@
 function GameInstall()
 {
-	var http = new XMLHttpRequest();
-    http.open('GET', "https://github.com/JWS7634/Web_Launcher/releases/download/Web_Test/Setup.exe", false);
-    http.send();
+    window.open("https://github.com/JWS7634/Web_Launcher/releases/download/WindowsInstaller/Setup.exe");
 }
 function GameUpdate()
 {
-	
+	window.open("JWSTestGame://UpdateByWeblauncher");
 }
 function GameLaunch()
 {
