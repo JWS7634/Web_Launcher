@@ -3,7 +3,7 @@ window.onload = function() {
 	var LocalVersionData;
 	var Architecture;
 
-	if(window.navigator.cpuClass == "x86")
+	if(window.navigator.platform == "win32" && window.navigator.cpuClass == "x86")
 		Architecture = "x86";
 	else
 		Architecture = "x64";
