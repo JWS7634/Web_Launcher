@@ -3,10 +3,8 @@ window.onload = function() {
 	var LocalVersionData;
 	var Architecture;
 
-	if(window.navigator.platform == "win32" && window.navigator.cpuClass == "x86")
-		Architecture = "x86";
-	else
-		Architecture = "x64";
+	window.navigator.userAgentData.getHighEntropyValues(["bitness"])
+		.then(ua => { Architecture = ua['bitness']; document.getElementById('Version-info').textContent = "게임 버전: " + OnlineVersionData + "_x" + Architecture;});
 
 	OnlineVersionData = Get_Version("https://jws7634.github.io/Web_Launcher/Version.info");
 	document.getElementById('Version-info').textContent = "게임 버전: " + OnlineVersionData + "_" + Architecture;
