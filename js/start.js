@@ -1,9 +1,15 @@
 window.onload = function() {
 	var OnlineVersionData;
 	var LocalVersionData;
+	var Architecture;
+
+	if(window.navigator.cpuClass == "x86")
+		Architecture = "x86";
+	else
+		Architecture = "x64";
 
 	OnlineVersionData = Get_Version("https://jws7634.github.io/Web_Launcher/Version.info");
-	document.getElementById('Version-info').textContent = "게임 버전: " + OnlineVersionData;
+	document.getElementById('Version-info').textContent = "게임 버전: " + OnlineVersionData + "_" + Architecture;
 
 	//Save LocalVersion after install
 	if ('true' == getParameterByName('InstallComplete') || 'true' == getParameterByName('UpdateComplete'))
