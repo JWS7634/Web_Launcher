@@ -15,11 +15,12 @@ body{
 
 .banner-box
 {
-	z-index: 100;
+	/*box-shadow: 0px 0px 10px;*/
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100px;
+	height: 50px;
+	line-height: 100px;
 	width: 100%;
 	border-bottom-color: #494949;
 	border-bottom-style: solid;
@@ -39,20 +40,72 @@ body{
 }
 .main-box
 {
-	padding-left: 50px;
-	text-align: left;
-	align-content: left;
+	margin: 50px;
+	display: table;
+	text-align: center;
+	align-content: center;
+	vertical-align: middle;
 	background-color: #262626;
 	color:#000000;
 }
-.launch-Button-outdated
+.Register-box
 {
-	margin-top: 30px;
-	margin-left: 30px;
-	float: left;
+	position: absolute;
+	box-shadow: 0px 0px 10px;
+	width:600px;
+	height:250px;
+	background-color: #1f1f1f;
+	border-radius:5px;
+	border: none;
+	color:#000000;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	margin-left: -320px;
+	margin-top: -125px;
+}
+.Register-box h2
+{
+	color:#ffffff;
+}
+
+.Register-box input
+{
 	outline: none;
-	width: 300px;
-	height: 70px;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	background-color: #1f1f1f;
+	color:#ffffff;
+	border-bottom-width: 1px;
+	width:80%;
+	height:50px;
+	font-size: 20px;
+	text-align: left;
+}
+.Register-box input:hover
+{
+	border-color: #ff5a00;
+	height:49px;
+	border-bottom-width: 2px;
+}
+.Register-box input:active
+{
+	border-color: #ff5a00;
+	height:49px;
+	border-bottom-width: 2px;
+}
+.Register-box input:focus
+{
+	border-color: #ff5a00;
+	height:49px;
+	border-bottom-width: 2px;
+}
+.Register-box button
+{
+	outline: none;
+	width: 200px;
+	height: 50px;
 	background-color: #ff5a00;
 	color:#ffffff;
 	border-radius:5px;
@@ -60,45 +113,11 @@ body{
 	padding: 0 0;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 36px;
+	font-size: 20px;
 	cursor: pointer;
+	margin-top: 20px;
 }
-.launch-Button-normal
-{
-	margin-top: 30px;
-	margin-left: 30px;
-	float: left;
-	outline: none;
-	width: 300px;
-	height: 70px;
-	background-color: #3643ff;
-	color:#ffffff;
-	border-radius:5px;
-	border: none;
-	padding: 0 0;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 36px;
-	cursor: pointer;
-}
-.launch-Button-notinstalled
-{
-	margin-top: 30px;
-	margin-left: 30px;
-	float: left;
-	outline: none;
-	width: 300px;
-	height: 70px;
-	background-color: #4e4e4e;
-	color:#ffffff;
-	border-radius:5px;
-	border: none;
-	padding: 0 0;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 36px;
-	cursor: pointer;
-}
+
 .Version-info
 {
 	margin-top: 7px;
@@ -122,29 +141,4 @@ body{
 	border-top-style: solid;
 	border-top-width: 1px;
 	text-align: left;
-}
-
-.content-box
-{
-	background-color: #1f1f1f;
-	position: absolute;
-	border-color: #494949;
-	border-style: solid;
-	border-width: 1px;
-	height: 300px;
-	width: 400px;
-	cursor: pointer;
-	top: 100%;
-	margin-top: -560px;
-}
-.content-text-box
-{
-	font-size: 20px;
-	color: #ffffff;
-	height: 140px;
-	margin: 20px;
-	/*
-	border-top-color: #494949;
-	border-top-style: solid;
-	border-top-width: 1px;*/
 }
