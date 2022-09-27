@@ -13,3 +13,7 @@ function GameLaunch()
 {
 	window.open("JWSTestGame://StartByWeblauncher");
 }
+function LinkToBugReport()
+{
+	location.replace("./BugReport/");
+}

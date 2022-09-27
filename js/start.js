@@ -3,6 +3,11 @@ window.onload = function() {
 	var LocalVersionData;
 	var Architecture;
 
+	if(null != localStorage.getItem('Player_Name'))
+	{
+		location.replace("./register/");
+	}
+
 	window.navigator.userAgentData.getHighEntropyValues(["bitness"])
 		.then(ua => { Architecture = ua['bitness']; document.getElementById('Version-info').textContent = "게임 버전: " + OnlineVersionData + "_x" + Architecture;});
 
@@ -13,10 +18,12 @@ window.onload = function() {
 	if ('true' == getParameterByName('InstallComplete') || 'true' == getParameterByName('UpdateComplete'))
 	{
 		localStorage.setItem('Game_Version', OnlineVersionData);
+		location.replace("https://jws7634.github.io/Web_Launcher/");
 	}
 	else if('true' == getParameterByName('UninstallComplete'))
 	{
 		localStorage.removeItem('Game_Version');
+		location.replace("https://jws7634.github.io/Web_Launcher/");
 	}
 
 	//Check installation
