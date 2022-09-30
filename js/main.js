@@ -15,5 +15,5 @@ function GameLaunch()
 }
 function LinkToBugReport()
 {
-	location.replace("./BugReport/");
+	window.open("./BugReport/");
 }

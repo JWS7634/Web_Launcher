@@ -1,1 +1,33 @@
-안농
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TestLauncher</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">\
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="banner-box">
+	</div>
+	<div class="main-box">
+		<div class="Report-box">
+			<div>
+				<h2>버그 리포트</h2>
+			</div>
+			<div class="DropDown">
+				<input class="DropDown-Button" type="text" id="Report-Type" disabled placeholder="유형" value="">
+				<div class="DropDown-content">
+					<a onclick='ReportType("버그, 오류");'>버그, 오류</a>
+					<a onclick='ReportType("피드백, 요구사항");' class="DropDown-contentEnd">피드백, 요구사항</a>
+				</div>
+			</div>
+			<div>
+				<textarea id="Report-Contents" placeholder="내용" spellcheck = "false"></textarea>
+			</div>
+			<div>
+				<button onClick="SendReport()">제출</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

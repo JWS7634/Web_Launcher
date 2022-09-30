@@ -15,12 +15,11 @@ body{
 
 .banner-box
 {
-	/*box-shadow: 0px 0px 10px;*/
+	z-index: 100;
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 50px;
-	line-height: 100px;
+	height: 100px;
 	width: 100%;
 	border-bottom-color: #494949;
 	border-bottom-style: solid;

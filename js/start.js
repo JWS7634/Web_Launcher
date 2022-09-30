@@ -3,7 +3,7 @@ window.onload = function() {
 	var LocalVersionData;
 	var Architecture;
 
-	if(null != localStorage.getItem('Player_Name'))
+	if(null == localStorage.getItem('Player_Name'))
 	{
 		location.replace("./register/");
 	}
