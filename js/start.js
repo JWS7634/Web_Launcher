@@ -3,28 +3,32 @@ window.onload = function() {
 	var LocalVersionData;
 	var Architecture;
 
-	if(null == localStorage.getItem('Player_Name'))
+	//Save LocalVersion after install
+	if ('true' == getParameterByName('InstallComplete') || 'true' == getParameterByName('UpdateComplete'))
+	{
+		localStorage.setItem('Game_Version', OnlineVersionData);
+		location.replace("https://jws7634.github.io/Web_Launcher/");
+		return;
+	}
+	else if('true' == getParameterByName('UninstallComplete'))
+	{
+		localStorage.removeItem('Game_Version');
+		location.replace("https://jws7634.github.io/Web_Launcher/");
+		return;
+	}
+
+	if(null == localStorage.getItem('Player-Name'))
 	{
 		location.replace("./register/");
+		return;
 	}
+	document.getElementById("player-info").textContent  = "환영합니다 " + localStorage.getItem("Player-Name") + " 님";
 
 	window.navigator.userAgentData.getHighEntropyValues(["bitness"])
 		.then(ua => { Architecture = ua['bitness']; document.getElementById('Version-info').textContent = "게임 버전: " + OnlineVersionData + "_x" + Architecture;});
 
 	OnlineVersionData = Get_Version("https://jws7634.github.io/Web_Launcher/Version.info");
 	document.getElementById('Version-info').textContent = "게임 버전: " + OnlineVersionData + "_" + Architecture;
-
-	//Save LocalVersion after install
-	if ('true' == getParameterByName('InstallComplete') || 'true' == getParameterByName('UpdateComplete'))
-	{
-		localStorage.setItem('Game_Version', OnlineVersionData);
-		location.replace("https://jws7634.github.io/Web_Launcher/");
-	}
-	else if('true' == getParameterByName('UninstallComplete'))
-	{
-		localStorage.removeItem('Game_Version');
-		location.replace("https://jws7634.github.io/Web_Launcher/");
-	}
 
 	//Check installation
 	Change_Button(OnlineVersionData);

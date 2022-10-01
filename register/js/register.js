@@ -1,4 +1,4 @@
-Register()
+function Register()
 {
 	var P_Name = document.getElementById('Player-Name').value;
 	var P_Division = document.getElementById('Player-Division').value;
